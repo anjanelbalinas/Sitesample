@@ -1,0 +1,124 @@
+/* Common styles for both desktop and mobile */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  body {font-family: Verdana, sans-serif; margin:0}
+  .mySlides {display: none}
+  img {vertical-align: middle;}
+  
+  body {
+    background-image: url('images/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color:#f0f0f0;
+  }
+  
+    /*Footer*/
+    
+    footer {
+      text-align: center;
+      padding: 3px;
+      background-color: rgb(59, 62, 83);
+        color: white;
+        padding: 20px;
+  }
+  .footer-links {
+    padding: 15px;
+    justify-content: space-between;
+     
+          }
+  
+  
+    /* navbar */
+    .navbar {
+      background-color: rgb(59, 62, 83);
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      position: fixed;
+
+    }
+    
+    .navbar a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      
+    }
+    
+    .navbar .icon {
+      display: none;
+     
+    }
+  
+    .navbar.vertical a {
+      display: block;
+      float: none;
+      text-align: left;
+   
+      
+    }
+    .navbar a:hover {
+      background-color: #3498db;
+      border-radius: 20%;
+    }
+    
+    .navbar.vertical a:hover {
+      background-color: #3498db;
+      border-radius: 20%;
+    }
+    
+    @media screen and (max-width: 767px) {
+        
+      .navbar a:not(:first-child) {
+        display: none;
+        
+      }
+      .navbar{
+          
+          width:100%;
+          
+      }
+      
+      .navbar a.icon {
+        float: right;
+        display: block;
+        
+      }
+      
+      .navbar.responsive {
+        position: fixed;
+      }
+      
+      .navbar.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      
+      .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+      
+      .navbar.responsive.vertical {
+        flex-direction: column;
+      }
+    }
+   
+    
+  
